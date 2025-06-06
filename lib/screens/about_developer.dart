@@ -173,7 +173,7 @@ class AboutDeveloper extends StatelessWidget {
                       } catch (e) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text('አልተሳካምም'),
+                            content: Text('አልተሳካም'),
                           ),
                         );
                       }
@@ -206,7 +206,7 @@ class AboutDeveloper extends StatelessWidget {
                       } catch (e) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text('አልተሳካምም'),
+                            content: Text('አልተሳካም'),
                           ),
                         );
                       }
@@ -239,7 +239,7 @@ class AboutDeveloper extends StatelessWidget {
                       } catch (e) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text('አልተሳካምም'),
+                            content: Text('አልተሳካም'),
                           ),
                         );
                       }
@@ -270,7 +270,7 @@ class AboutDeveloper extends StatelessWidget {
                       } catch (e) {
                         ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
-                            content: Text('አልተሳካምም'),
+                            content: Text('አልተሳካም'),
                           ),
                         );
                       }
@@ -288,13 +288,28 @@ class AboutDeveloper extends StatelessWidget {
     );
   }
 
-  Future<void> _launchURL(Uri baseUri, Uri fallbackUri) async {
-    if (await canLaunchUrl(baseUri)) {
-      await launchUrl(baseUri);
-    } else if (await canLaunchUrl(fallbackUri)) {
-      await launchUrl(fallbackUri);
-    } else {
-      throw 'Could not launch $baseUri';
+  // Future<void> _launchURL(Uri baseUri, Uri fallbackUri) async {
+  //   if (await canLaunchUrl(baseUri)) {
+  //     await launchUrl(baseUri);
+  //   } else if (await canLaunchUrl(fallbackUri)) {
+  //     await launchUrl(fallbackUri);
+  //   } else {
+  //     throw 'Could not launch $baseUri';
+  //   }
+  // }
+  Future<void> _launchURL(Uri url, Uri fallbackUrl) async {
+    // print('Trying to launch: $url');
+    try {
+      // print('can launch url: ${await canLaunchUrl(url)}');
+      await launchUrl(url);
+    } catch (_) {
+      // print('Failed to launch $url, trying fallback $fallbackUrl');
+      try {
+        await launchUrl(fallbackUrl);
+      } catch (e) {
+        // print('Cannot launch either $url or $fallbackUrl');
+        throw 'Could not launch $url';
+      }
     }
   }
 }

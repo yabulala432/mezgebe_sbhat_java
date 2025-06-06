@@ -66,7 +66,7 @@ class _ListScreen extends State<ListScreen> with AutomaticKeepAliveClientMixin {
                   ListItem(
                     folderName: playListProvider.playListParent.folderName,
                     title: lists[index].title,
-                    fileExtension: lists[index].fileExtension,
+                    // fileExtension: lists[index].fileExtension,
                     url: lists[index].audioUrl,
                     disabled: isDownloading,
                     onPressed: () {

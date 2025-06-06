@@ -13,7 +13,7 @@ import 'package:mezgebe_sbhat_java/data/kdase_selestu_miet.dart';
 import 'package:mezgebe_sbhat_java/data/kdase_welde_negodguad.dart';
 import 'package:mezgebe_sbhat_java/data/kdase_yaekob_ze_srug.dart';
 import 'package:mezgebe_sbhat_java/data/kdase_yohans_afewerk.dart';
-import 'package:mezgebe_sbhat_java/data/serawit.dart';
+// import 'package:mezgebe_sbhat_java/data/serawit.dart';
 import 'package:mezgebe_sbhat_java/models/menu.dart';
 
 List<Menu> kdaseMenu = [
@@ -31,14 +31,14 @@ List<Menu> kdaseMenu = [
     subTitle: 'ሥርዓተ ቅዳሴ ዘደብረ ዓባይ',
     playList: EzlKdaseMegbiya(),
   ),
-  Menu(
-    // serawit amharic =
-    title: 'ሠራዊት',
-    name: 'serawit',
-    imageUrl: 'assets/images/serawit.jpg',
-    subTitle: 'የሁሉም ቅዳሴያት ሠራዊት',
-    playList: SerawitMenu(),
-  ),
+  // Menu(
+  //   // serawit amharic =
+  //   title: 'ሠራዊት',
+  //   name: 'serawit',
+  //   imageUrl: 'assets/images/serawit.jpg',
+  //   subTitle: 'የሁሉም ቅዳሴያት ሠራዊት',
+  //   playList: SerawitMenu(),
+  // ),
   Menu(
     title: 'ግእዝ ዘሐዋርያት',
     name: 'kdase',

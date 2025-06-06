@@ -88,7 +88,7 @@ class PlayListProvider extends ChangeNotifier {
 
     try {
       final fileName =
-          '${playListParent.playList[_currentIndex].title}.${playListParent.playList[_currentIndex].fileExtension}';
+          '${playListParent.playList[_currentIndex].title}.${playListParent.playList[_currentIndex].audioUrl.split('.').last}';
       // print(fileName);
       final audioUrl = playListParent.playList[_currentIndex].audioUrl;
 

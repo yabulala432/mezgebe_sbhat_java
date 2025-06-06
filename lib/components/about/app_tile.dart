@@ -103,7 +103,7 @@ class AppTile extends StatelessWidget {
                     } catch (e) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text('አልተሳካምም'),
+                          content: Text('አልተሳካም'),
                         ),
                       );
                     }
@@ -123,9 +123,10 @@ class AppTile extends StatelessWidget {
                         Uri.parse('mailto:$email'),
                       );
                     } catch (e) {
+                      // print('$e is the error');
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text('አልተሳካምም'),
+                          content: Text('አልተሳካም'),
                         ),
                       );
                     }
@@ -146,7 +147,7 @@ class AppTile extends StatelessWidget {
                     } catch (e) {
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
-                          content: Text('አልተሳካምም'),
+                          content: Text('አልተሳካም'),
                         ),
                       );
                     }
@@ -165,13 +166,35 @@ class AppTile extends StatelessWidget {
     );
   }
 
+  // filepath: /home/yeabsirayonas/Desktop/flutterCourse/mezgebe_sbhat_java/lib/components/about/app_tile.dart
+  // Future<void> _launchUrl(Uri url, Uri fallbackUrl) async {
+  //   print('Trying to launch: $url');
+  //   if (await canLaunchUrl(url)) {
+  //     print('Can launch $url');
+  //     await launchUrl(url);
+  //   } else if (await canLaunchUrl(fallbackUrl)) {
+  //     print('Can launch fallback $fallbackUrl');
+  //     await launchUrl(fallbackUrl);
+  //   } else {
+  //     print('Cannot launch either $url or $fallbackUrl');
+  //     throw 'Could not launch $url';
+  //   }
+  // }
+
+  // filepath: /home/yeabsirayonas/Desktop/flutterCourse/mezgebe_sbhat_java/lib/components/about/app_tile.dart
   Future<void> _launchUrl(Uri url, Uri fallbackUrl) async {
-    if (await canLaunchUrl(url)) {
+    // print('Trying to launch: $url');
+    try {
+      // print('can launch url: ${await canLaunchUrl(url)}');
       await launchUrl(url);
-    } else if (await canLaunchUrl(fallbackUrl)) {
-      await launchUrl(fallbackUrl);
-    } else {
-      throw 'Could not launch $url';
+    } catch (_) {
+      // print('Failed to launch $url, trying fallback $fallbackUrl');
+      try {
+        await launchUrl(fallbackUrl);
+      } catch (e) {
+        // print('Cannot launch either $url or $fallbackUrl');
+        throw 'Could not launch $url';
+      }
     }
   }
 }

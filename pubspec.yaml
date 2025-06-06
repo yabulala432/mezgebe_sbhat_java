@@ -23,7 +23,7 @@ dependencies:
   flutter_native_splash: ^2.4.1
   just_audio: ^0.9.46
   syncfusion_flutter_pdfviewer: ^29.1.37
-  flutter_sound: ^9.28.0
+  # flutter_sound: ^9.28.0
 
 dev_dependencies:
   flutter_test:

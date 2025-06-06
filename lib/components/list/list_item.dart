@@ -7,7 +7,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 
 class ListItem extends StatefulWidget {
   final String title;
-  final String? fileExtension;
+  // final String? fileExtension;
   final String url;
   final String folderName;
   final bool disabled;
@@ -20,7 +20,7 @@ class ListItem extends StatefulWidget {
     required this.url,
     required this.onPressed,
     this.disabled = false,
-    this.fileExtension = 'mp3',
+    // this.fileExtension = 'mp3',
   });
 
   @override
@@ -241,7 +241,8 @@ class _ListItemState extends State<ListItem> {
   Future<bool> doesFileExist() async {
     bool value =
         await Provider.of<FileService>(context, listen: false).doesFileExist(
-      fileName: '${widget.title.replaceAll(' ', '_')}.${widget.fileExtension}',
+      fileName:
+          '${widget.title.replaceAll(' ', '_')}.${widget.url.split('.').last}',
       folderName: widget.folderName,
     );
     if (value) {

@@ -95,7 +95,7 @@ class AboutUs extends StatelessWidget {
               title: 'የሶፍትዌር መሐንዲስ',
               description: 'የሙሉ መተግበሪያው ገንቢ',
               telegramHandle: 'fkureyohanns',
-              website: 'https://portfolio-yeabsra.vercel.app/',
+              website: 'https://portfolio-yeabsira.netlify.app/',
               email: 'yabulala432@gmail.com',
             ),
             const SizedBox(

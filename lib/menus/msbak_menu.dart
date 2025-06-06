@@ -2,27 +2,27 @@ import 'package:mezgebe_sbhat_java/data/msbak_months.dart';
 import 'package:mezgebe_sbhat_java/models/menu.dart';
 
 List<Menu> msbakMenu = [
-  Menu(
-    title: 'መስከረም ምስባክ',
-    name: 'meskerem',
-    imageUrl: 'assets/images/msbak.jpeg',
-    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
-    playList: MeskeremMsbak(),
-  ),
-  Menu(
-    title: 'ጥቅምት ምስባክ',
-    name: 'tikimit',
-    imageUrl: 'assets/images/msbak.jpeg',
-    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
-    playList: TkmtMsbak(),
-  ),
-  Menu(
-    title: 'ህዳር ምስባክ',
-    name: 'hidar',
-    imageUrl: 'assets/images/msbak.jpeg',
-    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
-    playList: HdarMsbak(),
-  ),
+  // Menu(
+  //   title: 'መስከረም ምስባክ',
+  //   name: 'meskerem',
+  //   imageUrl: 'assets/images/msbak.jpeg',
+  //   subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+  //   playList: MeskeremMsbak(),
+  // ),
+  // Menu(
+  //   title: 'ጥቅምት ምስባክ',
+  //   name: 'tikimit',
+  //   imageUrl: 'assets/images/msbak.jpeg',
+  //   subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+  //   playList: TkmtMsbak(),
+  // ),
+  // Menu(
+  //   title: 'ህዳር ምስባክ',
+  //   name: 'hidar',
+  //   imageUrl: 'assets/images/msbak.jpeg',
+  //   subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+  //   playList: HdarMsbak(),
+  // ),
   Menu(
     title: 'ታህሳስ ምስባክ',
     name: 'tahisas',
@@ -79,18 +79,18 @@ List<Menu> msbakMenu = [
     subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
     playList: HamleMsbak(),
   ),
-  Menu(
-    title: 'ነሐሴ ምስባክ',
-    name: 'nehase',
-    imageUrl: 'assets/images/msbak.jpeg',
-    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
-    playList: NehaseMsbak(),
-  ),
-  Menu(
-    title: 'ጳጉሜን ምስባክ',
-    name: 'puagmen',
-    imageUrl: 'assets/images/msbak.jpeg',
-    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
-    playList: PuagmenMsbak(),
-  ),
+  // Menu(
+  //   title: 'ነሐሴ ምስባክ',
+  //   name: 'nehase',
+  //   imageUrl: 'assets/images/msbak.jpeg',
+  //   subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+  //   playList: NehaseMsbak(),
+  // ),
+  // Menu(
+  //   title: 'ጳጉሜን ምስባክ',
+  //   name: 'puagmen',
+  //   imageUrl: 'assets/images/msbak.jpeg',
+  //   subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+  //   playList: PuagmenMsbak(),
+  // ),
 ];
