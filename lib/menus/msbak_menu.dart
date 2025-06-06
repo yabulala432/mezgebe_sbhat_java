@@ -1,0 +1,96 @@
+import 'package:mezgebe_sbhat_java/data/msbak_months.dart';
+import 'package:mezgebe_sbhat_java/models/menu.dart';
+
+List<Menu> msbakMenu = [
+  Menu(
+    title: 'መስከረም ምስባክ',
+    name: 'meskerem',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: MeskeremMsbak(),
+  ),
+  Menu(
+    title: 'ጥቅምት ምስባክ',
+    name: 'tikimit',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: TkmtMsbak(),
+  ),
+  Menu(
+    title: 'ህዳር ምስባክ',
+    name: 'hidar',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: HdarMsbak(),
+  ),
+  Menu(
+    title: 'ታህሳስ ምስባክ',
+    name: 'tahisas',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: TahsasMsbak(),
+  ),
+  Menu(
+    title: 'ጥር ምስባክ',
+    name: 'tir',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: TirMsbak(),
+  ),
+  Menu(
+    title: 'የካቲት ምስባክ',
+    name: 'yekatit',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: YekatitMsbak(),
+  ),
+  Menu(
+    title: 'መጋቢት ምስባክ',
+    name: 'megabit',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: MegabitMsbak(),
+  ),
+  Menu(
+    title: 'ሚያዝያ ምስባክ',
+    name: 'miyazya',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: MiyazyaMsbak(),
+  ),
+  Menu(
+    title: 'ግንቦት ምስባክ',
+    name: 'ginbot',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: GnbotMsbak(),
+  ),
+  Menu(
+    title: 'ሰኔ ምስባክ',
+    name: 'sene',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: SeneMsbak(),
+  ),
+  Menu(
+    title: 'ሐምሌ ምስባክ',
+    name: 'hamle',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: HamleMsbak(),
+  ),
+  Menu(
+    title: 'ነሐሴ ምስባክ',
+    name: 'nehase',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: NehaseMsbak(),
+  ),
+  Menu(
+    title: 'ጳጉሜን ምስባክ',
+    name: 'puagmen',
+    imageUrl: 'assets/images/msbak.jpeg',
+    subTitle: "ምስባክ ዘቅዳሴ ወዘነግህ",
+    playList: PuagmenMsbak(),
+  ),
+];
